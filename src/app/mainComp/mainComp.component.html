@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="col-sm-4">
+                <button 
+                    class="btn btn-primary"
+                    [disabled]="buttonIsDisabled"
+                    (click)="activateInput()">Click Me</button>
+            </div>
+            <div class="col-sm-4">
+                <input 
+                type="text" 
+                class="form-control"
+                [disabled]="inputIsDisabled"
+                [(ngModel)]="inputValue">
+            </div>
+            <div class="col-sm-4">
+                Input Value: {{inputValue}}
+            </div>
+        </div>
+    </div>
+</div>
