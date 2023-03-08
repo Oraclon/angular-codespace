@@ -9,7 +9,8 @@ export class NasSecondComponent
 {
   PIsEnabled: boolean = true;
   ClearButtonIsEnabled: boolean = true;
-  logs: Array<number> = []
+  logs: Array<number> = [];
+
   ToggleTitle()
   {
     this.PIsEnabled = false;
@@ -19,8 +20,10 @@ export class NasSecondComponent
       this.logs.push(i);
     }
   }
+
   ClearLog()
   {
+    this.PIsEnabled = true;
     this.logs.splice(0);
   }
 
