@@ -10,7 +10,7 @@ import { ServerItemComponent } from './server-item/server-item.component';
   declarations: [
     AppComponent,
     ControlerComponent,
-    ServerItemComponent
+    ServerItemComponent,
   ],
 
   imports: [

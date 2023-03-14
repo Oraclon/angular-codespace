@@ -17,6 +17,9 @@ export class ControlerComponent {
 
   @Input() ServersCount!: number;
   @Input() BlurprintsCount!: number;
+  @Input() SerItems!:Array<ServerItem>;
+
+
 
   ReturnValue(inputValue: ElementRef)
   {
