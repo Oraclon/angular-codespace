@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="col-sm-4">
+    <app-controler
+    (ServerSignal)="SaveServer($event)"
+    (BlueprintSignal)="SaveBlueprint($event)"
+    (DeleteSignal)="DeleteAll($event)"
+    [ServersCount]="ServersCounter"
+    [BlurprintsCount]="BlueprintsCounter"></app-controler>
+  </div>
+
+  <div class="col-sm-5">
+    <ul class="list-group">
+      <app-server-item
+      *ngFor="let serverItem of ServerItems"
+      [item]="serverItem"></app-server-item>
+    </ul>
+  </div>
+</div>

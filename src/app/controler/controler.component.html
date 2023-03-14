@@ -1,0 +1,47 @@
+<div class="form-group col-sm-6">
+  <label for="servername">
+    Server Name
+  </label>
+  <input id="servername" class="form-control"
+  type="text" #ServerName>
+</div>
+<div class="form-group col-sm-6">
+  <label for="serverprice">
+    Server Price
+  </label>
+  <input id="serverprice" class="form-control"
+  type="text" #ServerPrice>
+</div>
+<div class="form-group col-sm-12">
+  <label for="servercontent">
+    Server Content
+  </label>
+  <input id="servercontent" class="form-control"
+  type="text" #ServerContent>
+</div>
+<div class="form-group col-sm-6">
+  <button class="btn btn-success btn-block col-sm-5"
+  (click)="ServerEmit()">
+    Add Server
+  </button>
+</div>
+<div class="form-group col-sm-6">
+  <button class="btn btn-primary btn-block col-sm-5"
+  (click)="BlueprintEmit()">
+    Add Blueprint
+  </button>
+</div>
+<div class="form-group col-sm-12">
+  <button class="btn btn-primary btn-danger col-sm-12"
+  (click)="DeleteEmit()">
+    Remove Servers
+  </button>
+</div>
+<div class="form-group col-sm-12">
+  <div class="col-sm-6">
+    Servers Created : <strong>{{ ServersCount }}</strong>
+  </div>
+  <div class="col-sm-6">
+    Blueprints Created: <strong>{{ BlurprintsCount }}</strong>
+  </div>
+</div>
